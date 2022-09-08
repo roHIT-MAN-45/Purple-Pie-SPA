@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* global styles 😊 */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;800&display=swap");
+
+body {
+  font-family: "Poppins";
+}
+
+.backgroundPrimary {
+  background: url("./assets/Banners/banner01.svg");
+  background-color: #8236fd;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.backgroundSecondary {
+  background: url("./assets/Banners/banner02.svg");
+  background-color: #8236fd;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.backgroundTertiary {
+  background: url("./assets/Banners/banner03.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.backgroundQuaternary {
+  /* Banner Not required ⚡ */
+  /* background: url("./assets/Banners/banner04.svg"); */
+  background-color: #8236fd;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.leftFadeIn {
+  animation: leftFadeIn 1s;
+  animation-fill-mode: both;
+}
+
+.rightFadeIn {
+  animation: rightFadeIn 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes leftFadeIn {
+  0% {
+    opacity: 0;
+    transform: translate3d(-40%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
+
+@keyframes rightFadeIn {
+  0% {
+    opacity: 0;
+    transform: translate3d(40%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
